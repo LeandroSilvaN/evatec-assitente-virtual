@@ -61,6 +61,14 @@ Seu papel é fornecer suporte aos usuários de forma amigável, rápida e eficie
 
 ---
 
+## 🚀 Teste a Evatec
+
+Quer conhecer a assistente virtual em ação?
+
+👉 **Acesse agora:** [Clique aqui](https://leandrosilvan.github.io/evatec-assitente-virtual/)
+
+---
+
 
 ## 💡 Inspiração
 
