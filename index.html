@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FATEC Zona Sul</title>
+    <!-- Google Fonts -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="fatec-header">
+        <div class="container">
+            <h1>FATEC Zona Sul</h1>
+            <p>Faculdade de Tecnologia da Zona Sul</p>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Bem-vindo ao Portal Acadêmico</h2>
+            <p>
+                Consulte informações acadêmicas, calendário,
+                matrícula e serviços para alunos.
+            </p>
+
+            <div class="cards">
+                <div class="card">
+                    <h3>Calendário Acadêmico</h3>
+                    <p>Datas importantes do semestre.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Matrícula</h3>
+                    <p>Informações e procedimentos.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Secretaria</h3>
+                    <p>Serviços acadêmicos disponíveis.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section class="video-apresentacao">
+    <h2>Conheça a Evatec</h2>
+    <p>Assista à apresentação da nossa assistente virtual acadêmica.</p>
+
+    <video controls>
+        <source src="video/evatec.mp4" type="video/mp4">
+        Seu navegador não suporta vídeos.
+    </video>
+</section>
+
+    <button id="chatbot-toggler">
+        <span class="material-symbols-rounded">mode_comment</span>
+        <span class="material-symbols-rounded">close</span>
+    </button>
+
+    <div class="chatbot-popup">
+        <!-- Chatbot Header -->
+        <div class="chat-header">
+            <div class="header-info">
+                <img src="img/persona-ia.png" class="chatbot-logo" alt="Persona IA">
+                <h2 class="logo-text">Evatec - Assistente Virtual</h2>
+            </div>
+            <button id="close-chatbot" class="material-symbols-rounded">keyboard_arrow_down</button>
+        </div>
+
+        <!-- Chatbot Body -->
+        <div class="chat-body">
+            <div class="message bot-message">
+                <img src="img/persona-ia.png" class="bot-avatar" alt="Persona IA">
+                <div class="message-text">
+                    Bem-vindo ao atendimento acadêmico da Fatec Zona Sul! 🎓<br>
+                    Posso auxiliar com:
+                    <br>• Trancamento de matrícula
+                    <br>• Declarações acadêmicas
+                    <br>• Informações sobre matrícula
+                    <br>• Calendário acadêmico
+                </div>
+            </div>
+        </div>
+
+        <!-- Chatbot Footer -->
+        <div class="chat-footer">
+            <form action="#" class="chat-form">
+                <textarea placeholder="Message..." class="message-input" required></textarea>
+                <div class="chat-controls">
+                    <button type="button" id="emoji-picker"
+                        class="material-symbols-outlined">sentiment_satisfied</button>
+                    <div class="file-upload-wrapper">
+                        <input type="file" accept="images/*" id="file-input" hidden>
+                        <img src="#">
+                        <button type="button" id="file-upload" class="material-symbols-rounded">attach_file</button>
+                        <button type="button" id="file-cancel" class="material-symbols-rounded">close</button>
+                    </div>
+
+                    <button type="submit" id="send-message" class="material-symbols-rounded">arrow_upward</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Emoji Picker -->
+    <script src="https://cdn.jsdelivr.net/npm/emoji-mart@latest/dist/browser.js"></script>
+
+    <!-- Linking javascript file -->
+    <script src="script.js"></script>
+</body>
+
+</html>
